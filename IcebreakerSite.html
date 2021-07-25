@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Jalen's Icebreaker Website</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 
+            Redirects page to tutorialspoint after 10 seconds :)
+            <meta http-equiv="refresh" content = "10; url = http://www.tutorialspoint.com" /> 
+        -->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Top Menu -->
+        <header 
+            class="fixed w-full bg-black text-white md:flex justify-between fixed-full"
+        >
+            <a 
+                class="font-bold block px-8 py-4 hover:text-yellow-500"
+                href="https://www.linkedin.com/in/jalen-mccloud-523671208/"
+            >Jalen McCloud</a>
+
+            <!-- Right Selections -->
+            <nav>
+                <ul class="md:flex font-bold">
+                    <li>
+                        <a 
+                            class="block px-8 py-4 hover:text-red-400"
+                            href="https://www.linkedin.com/in/jalen-mccloud-523671208/" 
+                        >Linkedin</a>
+                    </li>
+                    <li>
+                        <a 
+                            class="block px-8 py-4 hover:bg-blue-400"
+                            href="#me" 
+                        >About Me</a>
+                    </li>
+                    <li>
+                        <a
+                            class="block px-8 py-4 hover:bg-blue-600"
+                            href="#hobbies"
+                        >Hobbies</a>
+                    </li>
+                    <li>
+                        <a
+                            class="block px-8 py-4 hover:bg-purple-500"
+                            href="#pet"
+                        >Pet</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Sections List -->
+        <main class="bg-gradient-to-r from-blue-400 via-red-500 to-yellow-800">
+
+            <!-- About Me Section-->
+            <section id="me">
+                <a class="block py-8 py-4 pt-20 text-center text-5xl font-bold text-white md:text-8xl">About Me</a>
+                <div>
+                    <ul class="md:grid grid-cols-2" >
+                        <!-- Picture Section -->
+                        <li class="p-8">
+                            <!-- 
+                                maybe change picture of me 
+                                and the size                            
+                            -->
+                            <img src="Images/Me.JPG" 
+                                class="p-8 border-8 border-white md:p-20"
+                            />
+                        </li>
+
+                        <!-- Text Section -->
+                        <div class="text-center text-white text-2xl py-4 md:text-left">
+                            <li class="block font-bold px-10 py-2 text-3xl md:text-5xl md:pt-36">
+                                <a>Jalen McCloud</a>
+                            </li>
+                            <li class="italic block px-10 py-2 md:text-4xl">
+                                <a>Fayetteville, GA</a>
+                            </li>
+                            <li class="italic block px-10 py-2 md:text-4xl">
+                                <a>Junior Computer Science Major</a>
+                            </li>
+                            <li class="italic block px-10 py-2 md:text-4xl">
+                                <a>Clemson University</a>
+                            </li>
+                            
+                        </div>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Hobbies Section-->
+            <section id="hobbies">
+                <!-- Black Bar Seperator-->
+                <div class="block py-10 bg-black"></div>
+
+                <!-- Card Section -->
+                <div>
+                    <a class="block py-8 py-4 text-center text-5xl font-bold text-white md:text-8xl">Hobbies</a>
+                    <div>
+                        <ul class="grid p-10 gap-10 md:grid-cols-3">
+
+                            <!-- Card One -->
+                            <li class="w-96 block bg-white p-1 rounded-2xl md:w-full">
+                                <div class="grid grid-cols-2">
+                                    <img src="Images/Plants.JPG" class="rounded-2xl"\>
+                                    <div class="pl-4 pt-2 overflow-hidden">
+                                        <a class="font-bold text-lg ">Planting</a>
+                                        <a class="">I like to take care of succulents and cacti in my free time.</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Card Two -->
+                            <li class="w-96 block bg-white p-1 rounded-2xl md:w-full">
+                                <div class="grid grid-cols-2">
+                                    <img src="Images/RobotSketch.JPG" class="rounded-2xl"\>
+                                    <div class="pl-4 pt-2 overflow-hidden">
+                                        <a class="font-bold text-lg">Drawing</a>
+                                        <a>I spend a lot of my downtime doodling on any paper I can find.</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Card Three -->
+                            <li class="w-96 block bg-white p-1 rounded-2xl md:w-full">
+                                <div class="grid grid-cols-2">
+                                    <img src="Images/PvzDraw.JPG" class="rounded-2xl"\>
+                                    <div class="pl-4 pt-2 overflow-hidden">
+                                        <a class="font-bold text-lg">Gaming</a>
+                                        <a class="">Some of my favorites are Hollow Knight, PVZ: Garden Warfare 2, Hyper Light Drifter, and Ori.</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pet Section-->
+            <section id="pet">
+                <!-- Black Bar Seperator-->
+                <div class="block py-10 bg-black"></div>
+
+                <!-- Text Section -->
+                <div>
+                    <a class="block py-8 py-4 text-center text-5xl font-bold text-white md:text-8xl">Blitz</a>
+                    <div>
+                        <ul class="grid p-10 gap-10 md:grid-cols-2">
+
+                            <!-- Pic One -->
+                            <li class="w-96 block bg-white p-1 rounded-2xl md:w-full">
+                                <img src="Images/BCone.jpeg" class="rounded-2xl"\>
+                            </li>
+
+                            <!-- Pic Two -->
+                            <li class="w-96 block bg-white p-1 rounded-2xl md:w-full">
+                                <img src="Images/BThere.jpeg" class="rounded-2xl"\>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section-->
+        <footer 
+            id="bottom"
+            class="block px-8 py-4 bg-black text-white text-center"
+        >2021 McCloud Industries. All rights to leave me alone.
+        </footer>
+    </body>
+</html>
